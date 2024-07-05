@@ -1,0 +1,72 @@
+﻿<Window x:Class="PR7._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR7._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="325" Width="465" MaxWidth="525" MaxHeight="350" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3573B9" Offset="0"/>
+                <GradientStop Color="#FFA8B4E6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu VerticalAlignment="Top">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1E60AB" Offset="1"/>
+                    <GradientStop Color="#FF92A6F7" Offset="0"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem Header="Commands" FontSize="16" Foreground="White">
+                <MenuItem Header="Input" Click="Input_Click">
+                    <MenuItem.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF1E60AB" Offset="1"/>
+                            <GradientStop Color="#FF92A6F7" Offset="0"/>
+                        </LinearGradientBrush>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Calc" Click="Calculation_Click">
+                    <MenuItem.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF1E60AB" Offset="1"/>
+                            <GradientStop Color="#FF92A6F7" Offset="0"/>
+                        </LinearGradientBrush>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Draw" Click="Draw_Click">
+                    <MenuItem.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF1E60AB" Offset="1"/>
+                            <GradientStop Color="#FF92A6F7" Offset="0"/>
+                        </LinearGradientBrush>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Exit" Click="Exit_Click">
+                    <MenuItem.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF1E60AB" Offset="1"/>
+                            <GradientStop Color="#FF92A6F7" Offset="0"/>
+                        </LinearGradientBrush>
+                    </MenuItem.Background>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="332,229,0,0" Click="Close_Click" FontSize="20" Height="45" Width="108" Foreground="White" BorderBrush="White" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1E60AB" Offset="1"/>
+                    <GradientStop Color="#FF92A6F7" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
